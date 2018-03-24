@@ -1,2 +1,2 @@
-# university_jobs
+# University jobs
 Repository with some university jobs
