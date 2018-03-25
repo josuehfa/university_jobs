@@ -6,7 +6,6 @@ Todos os codigos foram compilados usando o seguinte comando:
 
 ```
 g++ -o ex ex.cpp
-
 ```
 
 A execução de cada questão depende do input e output solicitado no enunciado nelas, em geral, eles são executadas somente com:
@@ -14,7 +13,6 @@ A execução de cada questão depende do input e output solicitado no enunciado 
 
 ```
 ./ex
-
 ```
 
 Criadas por: [Josué Henrique](https://github.com/josuehfa/) 
