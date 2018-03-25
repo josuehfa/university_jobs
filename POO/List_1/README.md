@@ -19,4 +19,4 @@ A execução de cada questão depende do input e output solicitado no enunciado 
 
 Criadas por: [Josué Henrique](https://github.com/josuehfa/) 
 
-> Create by : [Josué Henrique](https://github.com/josuehfa/) 
+> Created by : [Josué Henrique](https://github.com/josuehfa/) 
