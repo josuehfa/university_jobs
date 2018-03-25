@@ -1,0 +1,36 @@
+
+Resposta para os exercicios teoricos da lista 1:
+
+11.
+	Na função troca1, o vetor não se altera pois as variáveis são locais. Com isso, o vetor [ 5 , 1 , 2, 3 ] é imprimido na tela pela função imprime. Em seguida, o tamanho do vetor é calculado encontrando 4 como resultado. Na função troca2, ocorre um loop alterando i de 0 para 1. Com o valor 0, v[0] se torna 3 e v[3] se torna 5, com o valor de i igual a 1, v[1] se torna 2 e v[2] se torna 1. Resultando em um vetor [ 3 , 2 , 1 , 5 ]. 
+
+
+12.
+	[  p++  ] - Significa que o endereço do ponteiro p foi deslocado para o endereço de p + 1.
+	[(*p)++ ] - Significa que o valor no ponteiro p é acrecido de 1.
+	[*(p++) ] - Significa que o valor mostrado é o presente no endereço do ponteiro p + 1.
+	[ *p++  ] - Significa que o valor mostrado é o presente no endereço do ponteiro p acrecido de 1.
+	[*(p+10)] - Significa que o valor mostrado é o presente no endereço do ponteiro p + 10.
+
+
+13.
+
+	a) V. Sim, o ponteiro "pa" vai apontar para o endereço de inicio do vetor "a".
+
+	b) V. Sim, como tanto "pa" como "a" são ponteiros, o C++ permite a igualdade entre eles.
+ 
+	c) V. Sim, pode, pois o endereço do ponteiro "a" adicionado de i é o mesmo que v[i].
+
+	d) V. Sim, o primeiro é o endereço do vetor mais i e o segundo o endereço do ponteiro mais i.
+
+	e) V. Sim, como "a" é um vetor, podemos trabalhar com ele como um ponteiro.
+
+	f) V. Sim.
+
+	g) V. Sim.
+
+	h) V. Sim.
+
+	i) F. Não.
+
+	j) F. Não.

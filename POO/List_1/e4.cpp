@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 using namespace std;
 
 int eliminaRepetidos(int vet[10]){
@@ -37,9 +38,10 @@ void imprime(int vet[10],int numElem){
 int main(){
 	int i, numElem;
 	int vet[10];
+	srand (time(NULL));
 	cout << "Elementos gerados aleatoriamente: \n";
 	for(i = 0; i < 10; i++){
-		vet[i] = rand() % 9 + 12;
+		vet[i] = rand() % 10 + 12;
 		cout << vet[i] << " ";
 	}
 	numElem = eliminaRepetidos(vet);
