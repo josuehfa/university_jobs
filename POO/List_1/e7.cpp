@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <string>
@@ -6,13 +7,13 @@
 using namespace std;
 
 
-void imprimeCartas(int cartas[4][13], string naipes[4], string faces[4]){
+void imprimeCartas(int cartas[4][13], string naipes[4], string faces[13]){
 	int i,j,k;
 	for(i = 1; i < 53; i ++){
 		for(j = 0; j < 4; j++ ){
 			for(k = 0; k < 13; k++ ){
-				if(cartas[j][k] == i){
-					cout << faces[j] << naipes[k] << "\n";
+				if(i == cartas[j][k]){
+					cout << i << "ª - " << faces[k] << naipes[j] << "\n";
 				}
 			}
 		}
@@ -28,7 +29,7 @@ void embaralha(int cartas[4][13]){
 		altNaipe = rand() % 4;
 		altFaces = rand() % 13;
 		if(cartas[altNaipe][altFaces] == 0){ 
-		cartas[altNaipe][altFaces] = i;
+			cartas[altNaipe][altFaces] = i;
 		}else{
 			i--;
 		}
@@ -36,12 +37,13 @@ void embaralha(int cartas[4][13]){
 }
 
 int main(){
-	// 0 - copas; 1 - ouros; 2 - paus; 3 - espadas.
+	
 	int cartas[4][13] = {0};
 	string naipes[4] = {"de Copas", "de Ouros","de Paus","de Espadas"};
-	//std::vector<int> v(begin(napies), end(naipes));
 	string faces[13] = {"Ás ", "Dois ", "Três ","Quatro ","Cinco ","Seis ","Sete ", "Oito ","Nove ", "Dez ", "Valete ", "Dama ", "Rei "};
-	//std::vector<int> v(begin(faces), end(faces));
+	cout << "Embaralhando cartas...  \n";
 	embaralha(cartas);
+	cout << "Ordem das cartas após o embaralhamento:\n";
 	imprimeCartas(cartas, naipes, faces);
+	return 0;
 }
